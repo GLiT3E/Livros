@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Livros Favoritos</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      text-align: center;
+      background-color: #fffafc;
+      margin: 0;
+      padding: 0;
+    }
+
+    .grid-container {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 40px;
+      padding: 50px;
+      justify-items: center;
+    }
+
+    .grid-container.row2 {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    .book-wrapper {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      max-width: 300px;
+    }
+
+    .book-item {
+      background-color: #ffd1d8;
+      border-radius: 20px;
+      padding: 15px;
+      width: 100%;
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .book-item:hover {
+      transform: translateY(-5px);
+    }
+
+    .book-item img {
+      width: 100%;
+      border-radius: 12px;
+    }
+
+    .book-title {
+      font-weight: bold;
+      font-size: 18px;
+      margin-top: 10px;
+      color: #b3003c;
+    }
+
+    .book-author {
+      font-size: 15px;
+      color: #a9274c;
+      margin-bottom: 8px;
+    }
+
+    .rating {
+      font-size: 18px;
+      margin-bottom: 5px;
+    }
+
+    .rating span {
+      color: gold;
+      font-size: 20px;
+    }
+
+    .user-rating {
+      font-size: 15px;
+      color: #000000;
+      margin-bottom: 8px;
+    }
+
+    .outside-text {
+      margin-top: 12px;
+      font-size: 14.5px;
+      color: #000000;
+      line-height: 1.5;
+      text-align: justify;
+      max-width: 90%;
+      background-color: #fff0f3;
+      padding: 10px 15px;
+      border-radius: 12px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.221);
+    }
+  </style>
+</head>
+<body>
+
+  <div class="grid-container">
+    <div class="book-wrapper">
+      <div class="book-item">
+        <img src="Suicidas - Editado.png" alt="Suicidas">
+        <div class="book-title">Suicidas</div>
+        <div class="book-author">Raphael Montes</div>
+        <div class="rating"><span>⭐</span> 4.6/5</div>
+        <div class="user-rating">Minha avaliação: 5/5</div>
+      </div>
+      <div class="outside-text">
+        "Suicidas", de Raphael Montes, é um romance policial que acompanha nove jovens universitários da elite carioca encontrados mortos num porão, aparentemente após terem participado de uma roleta-russa. A trama investiga as razões que levaram esses jovens a um suicídio em massa, com a polícia e as mães dos falecidos tentando desvendar o mistério.
+      </div>
+    </div>
+
+    <div class="book-wrapper">
+      <div class="book-item">
+        <img src="4a68fd10-1d29-4803-a1af-67a46cb06322.png" alt="Castelo Animado">
+        <div class="book-title">Castelo Animado</div>
+        <div class="book-author">Diana Wynne Jones</div>
+        <div class="rating"><span>⭐</span> 4.8/5</div>
+        <div class="user-rating">Minha avaliação: 4.6/5</div>
+      </div>
+      <div class="outside-text">
+        Em "O Castelo Animado", Sophie, a mais velha de três irmãs, é amaldiçoada por uma bruxa e transformada em uma velha de 90 anos. Fugindo da sua família, ela encontra o castelo do mago Howl, conhecido por ser um mulherengo. A aventura de Sophie se desenrola dentro do castelo, onde ela se torna parte da vida do mago, do demônio Calcifer e de outros personagens, aprendendo sobre a verdadeira natureza da beleza e da compaixão.
+      </div>
+    </div>
+
+    <div class="book-wrapper">
+      <div class="book-item">
+        <img src="O Vilarejo - Editado.png" alt="O Vilarejo">
+        <div class="book-title">O Vilarejo</div>
+        <div class="book-author">Raphael Montes</div>
+        <div class="rating"><span>⭐</span> 4.8/5</div>
+        <div class="user-rating">Minha avaliação: 4.8/5</div>
+      </div>
+      <div class="outside-text">
+        Um vilarejo que sumiu do mapa. O tempo o apagou do mundo, da história, da mente das pessoas. A única prova de que o local existiu é a vida de seus moradores, as histórias que ficaram registradas em um caderno com ilustrações macabras.
+      </div>
+    </div>
+  </div>
+
+  <div class="grid-container row2">
+    <div class="book-wrapper">
+      <div class="book-item">
+        <img src="9d92f0cd-af7f-4870-94a6-2c5a153b7e82 (1).png" alt="Relatos de um Gato Viajante">
+        <div class="book-title">Relatos de um Gato Viajante</div>
+        <div class="book-author">Hiro Arikawa</div>
+        <div class="rating"><span>⭐</span> 4.8/5</div>
+        <div class="user-rating">Minha avaliação: 4.8/5</div>
+      </div>
+      <div class="outside-text">
+        O gato Nana está viajando pelo Japão. Ele não sabe muito bem para onde está indo ou por que, mas ele está sentado no banco da van prata de Satoru, seu dono. Lado a lado, eles cruzam o país para visitar velhos amigos. Mas qual é o motivo dessa viagem? Quando Nana descobrir, seu pequeno coração passará por uma das mais difíceis provas de suas sete vidas. Um romance emocionante e divertido que mostra uma amizade além das fronteiras da vida.
+      </div>
+    </div>
+
+    <div class="book-wrapper">
+      <div class="book-item">
+        <img src="Jantar Secreto - Editado.png" alt="Jantar Secreto">
+        <div class="book-title">Jantar Secreto</div>
+        <div class="book-author">Raphael Montes</div>
+        <div class="rating"><span>⭐</span> 4.5/5</div>
+        <div class="user-rating">Minha avaliação: 4.7/5</div>
+      </div>
+      <div class="outside-text">
+        Em "Jantar Secreto", a trama gira em torno de quatro amigos que se mudam para o Rio de Janeiro. Para sobreviver na cidade grande, eles passam a organizar jantares exclusivos com pratos extremamente controversos e caros. Misturando suspense, crítica social e reviravoltas chocantes, o livro oferece uma leitura intensa e provocadora.
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
